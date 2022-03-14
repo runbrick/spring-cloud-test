@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-eureka-balance-server
+
+server:
+  port: 10013
+#  eureka 服务配置
+eureka:
+  instance:
+    hostname: localhost10013
+  client:
+    service-url:
+      defaultZone: http://localhost10012:10012/eureka/
+

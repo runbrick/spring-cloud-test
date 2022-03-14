@@ -7,7 +7,7 @@ server:
 #  eureka 服务配置
 eureka:
   instance:
-    hostname: localhost-10010
+    hostname: localhost10010
   client:
     # 由于是服务端所以不需要注册到 eureka 中
     register-with-eureka: false
