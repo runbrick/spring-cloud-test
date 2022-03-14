@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-eureka-server
+
+server:
+  port: 10010
+#  eureka 服务配置
+eureka:
+  instance:
+    hostname: localhost-10010
+  client:
+    # 由于是服务端所以不需要注册到 eureka 中
+    register-with-eureka: false
+    # 表示是否从Eureka Server获取注册的服务信息
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
