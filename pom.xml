@@ -11,6 +11,7 @@
         <module>spring-cloud-eureka</module>
         <module>spring-cloud-eureka-balance</module>
         <module>spring-cloud-eureka-feign</module>
+        <module>spring-cloud-eureka-hystrix</module>
     </modules>
 
     <name>spring-cloud-test</name>
